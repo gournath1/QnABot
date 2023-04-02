@@ -1,8 +1,8 @@
 import os
 os.environ["OPENAI_API_KEY"] = "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"
 
-from langchain.document_loaders import PyPDFLoader
-loader = PyPDFLoader("Gita.pdf")
+from langchain.document_loaders import TextLoader
+loader = TextLoader('Gita.txt')
 
 from langchain.indexes import VectorstoreIndexCreator
 index = VectorstoreIndexCreator().from_loaders([loader])
