@@ -1,5 +1,5 @@
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 from langchain.document_loaders import PyPDFLoader
 loader = PyPDFLoader("Gita.pdf")
