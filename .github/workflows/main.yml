@@ -1,0 +1,3 @@
+- name: Test env vars for python
+  run: OAPI_KEY=${{ secrets.OAPI_KEY }} 
+  python -c 'import os;print(os.environ['OAPI_KEY'])
